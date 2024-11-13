@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ServerWindow</class>
+ <widget class="QMainWindow" name="ServerWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Server GUI</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_ip">
+      <property name="text">
+       <string>Địa chỉ IP:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="host_input">
+      <property name="placeholderText">
+       <string>Nhập địa chỉ IP</string>
+      </property>
+      <property name="text">
+       <string>127.0.0.1</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_port">
+      <property name="text">
+       <string>Cổng:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="port_input">
+      <property name="placeholderText">
+       <string>Nhập cổng</string>
+      </property>
+      <property name="text">
+       <string>12345</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="start_button">
+      <property name="text">
+       <string>Bắt đầu Server</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="stop_button">
+      <property name="text">
+       <string>Dừng Server</string>
+      </property>
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_log">
+      <property name="text">
+       <string>Thông tin server:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="log_display">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_chat">
+      <property name="text">
+       <string>Gửi tin nhắn đến tất cả client:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="message_input">
+      <property name="placeholderText">
+       <string>Nhập tin nhắn để gửi...</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="send_button">
+      <property name="text">
+       <string>Gửi tin nhắn</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
